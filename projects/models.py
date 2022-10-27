@@ -5,3 +5,5 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length=32)
     image = models.FilePathField(path="/img")
+    url = models.URLField(max_length=128)
+    
