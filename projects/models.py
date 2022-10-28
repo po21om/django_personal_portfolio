@@ -7,3 +7,5 @@ class Project(models.Model):
     image = models.FilePathField(path="/img")
     url = models.URLField(max_length=128)
     
+    def __str__(self) -> str:
+        return self.title
